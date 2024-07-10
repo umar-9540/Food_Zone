@@ -2,12 +2,10 @@ import styled from "styled-components";
 import { BASE_URL } from "../../App";
 
 const SearchResult = (data) => {
-    console.log("U:" , data)
     const receivedData=data.data;
   return (
     <FoodCardContainer>
           <FoodCards>
-            {console.log("Umar:" ,receivedData)}
             {receivedData?.map((food) => (
               <FoodCard key ={food.name}>
                 <div className="food_image">
