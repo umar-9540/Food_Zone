@@ -1,7 +1,10 @@
 import styled from "styled-components";
-import { BASE_URL, Button, Container } from "../../App";
+import {Button, Container } from "../../App";
+const BASE_URL =import.meta.env.VITE_BASE_URL;
 
 const SearchResult = (data) => {
+  console.log("BASE_URL", BASE_URL);
+
     const receivedData=data.data;
   return (
     <FoodCardContainer>
